@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Numbrid</title>
+</head>
+
+<body style="background-color: rgb(62, 229, 241);">
+    <button id="btnVajutaHiiregaNumbrileJaKuula" type="button" class="h2 btn btn-outline-primary">
+        <img src="images/cursor_PNG68.png" alt="" class="h-2-em">
+        VAJUTA HIIREGA NUMBRILE JA KUULA!
+        <img src="images/listen-cartoon-png-1.png" alt="Kuula" class="h-2-em">
+    </button>
+    <button id="btnVajutaKlaviatuurilNumbrileJaKuula" type="button" class="h2 btn btn-outline-primary">
+        <img src="images/keyboard_PNG5862.png" alt="" class="h-2-em">
+        VAJUTA KLAVIATUURIL NUMBRILE JA KUULA!
+        <img src="images/listen-cartoon-png-1.png" alt="Kuula" class="h-2-em">
+    </button>
+    <div id="numbrid" class="row d-flex"></div>
+    <div class="flier"><img src="images/numbers.png" style="height: 5em;"></div>
+    <audio id="audio-1"></audio>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script>require(["modules/numbrid"]);</script>
+</body>
+
+</html>

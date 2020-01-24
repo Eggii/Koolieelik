@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arvuta</title>
+</head>
+
+<body style="background-color: lightgreen;">
+    <div class="row">
+        <button id="btnSum" type="button" class="h2 btn btn-warning">
+            Liida
+            <img src="images/plus.png" alt="Kuula" class="h-2-em">
+        </button>
+        <button id="btnSub" type="button" class="h2 btn btn-warning ml-4">
+            Lahuta
+            <img src="images/minus.png" alt="Kuula" class="h-2-em">
+        </button>
+        <button id="btnVastus" type="button" class="btn h2 ml-md-5 d-none" style="background-color: yellowgreen;  font-weight: bold;"></button>
+    </div>
+    <div id="mathOperation" class="form-inline d-none">
+        <div id="firstInput" class="form-control btn btn-info mb-2"></div>
+        <div id="actionSign" class="form-control btn btn-info mb-2 mx-sm-4"></div>
+        <div id="secondInput" class="form-control btn btn-info mb-2"></div>
+        <div id="equals" class="form-control btn btn-info mb-2 mx-sm-4">=</div>
+        <label for="inpLetter">
+            <img src="images/pencil_PNG3855.png" alt="" style="height: 56px;">
+        </label>
+        <input id="inpLetter" class="form-control btn btn-info mb-2 ml-2" type="text" autocomplete="off" min="1"
+            max="10" maxlength="2" style="justify-content: center; display: flex; font-size: 4em; width: 2em;">
+        <div id="btnVastusImg" class="form-control btn btn-info mb-2">?</div>
+    </div>
+    <div id="numbrid" class="row d-flex"></div>
+    <audio id="audio-1"></audio>
+    <div class="flier"><img src="images/mathflier.png" style="height: 5em;"></div>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script>require(["modules/numbrid"]);</script>
+    <script>require(["modules/arvuta"]);</script>
+
+</body>
+
+</html>

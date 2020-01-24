@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VALI TÄHED</title>
+</head>
+
+<body style="background-color: rgb(226, 43, 226);">
+    <button id="btnKirjutaOigeTaht" type="button" class="h2 btn btn-info">
+        KIRJUTA ÕIGE TÄHT!
+        <img src="images/keyboard_PNG5862.png" alt="Kuula" class="h-2-em">
+    </button>
+    <div class="row m-0">
+        <button id="btnValiSuvalineTaht" type="button" class="h2 btn btn-info">
+            VALI SUVALINE TÄHT!
+            <img src="images/dice_PNG146.png" alt="Kuula" class="h-2-em">
+        </button>
+        <button id="btnKordaTaht" type="button" class="h2 btn btn-info ml-2">
+            KORDA TÄHTE!
+            <img src="images/korda.png" alt="Kuula" class="h-2-em">
+        </button>
+    </div>
+    <div class="row m-0">
+        <form onsubmit="return false" class="form-inline">
+            <div class="form-group">
+                <input id="inpLetter" type="text" class="form-control-lg" maxlength="1">
+                <label for="inpLetter"><img src="images/pencil_PNG3855.png" alt="" height="56px"></label>
+            </div>
+            <button id="btnVastus" type="button" class="form-control-lg ml-md-5"
+            style="background-color: yellowgreen; display: none; font-weight: bold;"></button>
+        </form>
+    </div>
+
+    <div id="letters" class="grid-container8 mt-1" style="list-style: none;"></div>
+    <div class="flier"><img src="images/smiley_PNG36229.png" style="height: 5em;"></div>
+    <audio id="audio-1"></audio>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script>require(["modules/valiOigeTaht"], function (params) {
+            params.main({ objCase: true });
+        });
+    </script>
+</body>
+
+</html>

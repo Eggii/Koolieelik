@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TÄHESTIK</title>
+</head>
+<body style="background-color:rgb(238, 234, 24)">
+    <div id="carousel"></div>
+    <h1 style="text-align: center; color: blue; font-size: 4em;">TÄHESTIK</h1>
+    <div style="vertical-align:bottom">
+        <button id="btnVajutaHiiregaTaheleJaKuula" type="button" class="h2 btn btn-outline-info">
+            <img src="images/cursor_PNG68.png" alt="" style="width: 1.5em;">
+            VAJUTA HIIREGA TÄHELE JA KUULA!
+            <img src="images/listen-cartoon-png-1.png" alt="Kuula">
+        </button>
+        <button id="btnVajutaKlaviatuurilTaheleJaKuula" type="button" class="h2 btn btn-outline-info">
+            <img src="images/keyboard_PNG5862.png" alt="">
+            VAJUTA KLAVIATUURIL TÄHELE JA KUULA!
+            <img src="images/listen-cartoon-png-1.png" alt="Kuula">
+        </button>
+    </div>
+    <div id="letters" class="grid-container8" style="list-style: none;"></div>
+    <div class="flier"><img src="images/giphy.gif" style="height: 5em;"></div>
+    <audio id="audio-1"></audio>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script type="module">require(['index'])</script>
+</body>
+
+</html>
