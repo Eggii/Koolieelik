@@ -114,19 +114,26 @@ define(["constants", 'modules/nav', 'modules/audio'], function (CONSTANTS, nav, 
             });
 
             function validateInput() {
-                if (inpLetter.val().toLowerCase() == randomLetter) {
+                let addbtnVastus = function(param){
                     btnVastus.show();
-                    btnVastus.text('VASTUS ON ÕIGE');
-                    btnVastus.append('<img src="images/smiley_PNG131.png" alt="Kuula"style="height: 2em; width: auto; display: inline-block; vertical-align: middle;"></img>');
-                    audio.src = 'audio/titles/vastus_on_oige.wav';
+                    btnVastus.text(param.text);
+                    btnVastus.append(param.element);
+                    audio.src = param.src;
                     audio.playAudio.play(audio.src);
                 }
+                if (inpLetter.val().toLowerCase() == randomLetter) {
+                    addbtnVastus({
+                        text: "VASTUS ON ÕIGE",
+                        element: '<img src="images/smiley_PNG131.png" alt="Kuula"style="height: 2em; width: auto; display: inline-block; vertical-align: middle;"></img>',
+                        src: "audio/titles/vastus_on_oige.wav"
+                    });
+                }
                 else {
-                    btnVastus.show();
-                    btnVastus.text("VASTUS ON VALE");
-                    btnVastus.append('<img src="images/smiley_PNG175.png" alt="Kuula"style="height: 2em; width:auto display: inline-block; vertical-align: middle;"></img>');
-                    audio.src = 'audio/titles/vastus_on_vale.wav';
-                    audio.playAudio.play(audio.src);
+                    addbtnVastus({
+                        text: "VASTUS ON VALE",
+                        element: '<img src="images/smiley_PNG175.png" alt="Kuula"style="height: 2em; width:auto display: inline-block; vertical-align: middle;"></img>',
+                        src: "audio/titles/vastus_on_vale.wav"
+                    });
                 }
             }
         }

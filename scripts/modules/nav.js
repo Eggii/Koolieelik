@@ -22,11 +22,11 @@ define(['jquery'], function ($) {
                             <a class="nav-link" href="numbrid.html">123</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="arvuta.html">Arvuta</a>
+                            <a class="nav-link" href="arvuta.html">ARVUTA</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <img src="images/student_PNG62552.png" alt="Students" class="h-2-em"></img>
+                        <img src="images/student_PNG62552.png" alt="õpilased" class="h-2-em"></img>
                     </span>
                 </div>
         `);
