@@ -60,6 +60,10 @@ button img {
     filter: invert(100%);
 }
 
+#sheet {
+  border:1px solid black;
+}
+
 .img1 {
   display: block;  margin-left: auto; margin-right: auto;
   width: 1.5em;

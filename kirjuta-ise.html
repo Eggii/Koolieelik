@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kirjuta ise</title>
+</head>
+
+<body style="background-color: rgb(207, 93, 150);">
+    <div class="row">
+        <button id="btnKirjutaIseTaht" type="button" class="h2 btn btn-outline-info  mr-2">
+            <img src="images/mouse.png" alt="" class="h-2-em">
+            KIRJUTA ISE TÄHT!
+            <img src="images/listen-cartoon-png-1.png" alt="Kuula" class="h-2-em">
+        </button>
+        <button id="btnTrukitahed" type="button" class="h2 btn btn-outline-info mr-2">
+            <img src="images/mouse.png" alt="" class="h-2-em">
+            TRÜKITÄHED!
+            <img src="images/A.png" alt="Kuula" class="h-2-em">
+        </button>
+        <button id="btnKirjatahed" type="button" class="h2 btn btn-outline-info">
+            <img src="images/mouse.png" alt="" class="h-2-em">
+            Kirjatähed!
+            <img src="images/a.png" alt="Kuula" class="h-2-em">
+        </button>
+    </div>
+    <div id="letters" class="grid-container8" style="list-style: none;"></div>
+    <div class="row">
+        <canvas id="sheet" class="mt-2 mr-2" width="200" height="200"
+            style="margin-left: 40%; border-color: #17a2b8;"></canvas>
+        <button id="btnClearCanvas" type="button" class="h2 btn btn-outline-info">
+            <img src="images/mouse.png" alt="" class="h-2-em">
+            Proovi uuesti!
+            <img src="images/listen-cartoon-png-1.png" alt="Kuula" class="h-2-em">
+        </button>
+    </div>
+    <div class="flier"><img src="images/drawing.png" style="height: 5em;"></div>
+    <audio id="audio-1"></audio>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script type="module">require(['index'])</script>
+    <script data-main="scripts/config" src="scripts/modules/kirjuta-ise.js"></script>
+</body>
+
+</html>

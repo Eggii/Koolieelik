@@ -9,12 +9,12 @@ require(["modules/nav", 'modules/carousel', "modules/audio", "constants"], funct
     let letter, node;
 
     for (i = 0; i < ALPHABET.length; i++) {
-        node = $("<div>", { "class": "grid-item letter btn", "data-nr": ALPHABET[i] });
+        node = $("<div>", { "class": "grid-item letter btn", "data-letter": ALPHABET[i] });
         letter = ALPHABET[i].toLocaleUpperCase();
         node.html(letter);
         node.css({ "font-size": "1em" });
         node.on("click", function () {
-            audio.src = 'audio/alphabet/' + $(this).data("nr") + '.wav';
+            audio.src = 'audio/alphabet/' + $(this).data("letter") + '.wav';
             audio.playAudio.play(audio.src);
         });
         node.on("mousedown", function (e) {
@@ -24,7 +24,7 @@ require(["modules/nav", 'modules/carousel', "modules/audio", "constants"], funct
             e.target.style.color = "black";
         });
 
-        let img = $("<img>", { "src": "images/alphabet_images/" + ALPHABET[i] + ".png", "class": "img1" });
+        let img = $("<img>", { "src": "images/alphabet_images/" + ALPHABET[i] + ".png", "class": "img1", "data-letter": ALPHABET[i] });
         node.append(img);
         letters.append(node);
     }

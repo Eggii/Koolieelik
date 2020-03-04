@@ -20,7 +20,7 @@ require(["modules/nav",
         btnSum.on("click", function () {
             audio.src = "audio/titles/liida.wav";
             audio.playAudio.play(audio.src);
-            
+
             mathOperation.removeClass("d-none");
             initializeMathOperation({
                 actionSign: "+",
@@ -85,8 +85,10 @@ require(["modules/nav",
 
             });
             $(this).on("mouseup", function () {
-                validateInput();
-                btnVastus.removeClass("d-none");
+                if (inpLetter.is(":visible")) {
+                    validateInput();
+                    btnVastus.removeClass("d-none");
+                }
             });
         });
 
@@ -110,11 +112,22 @@ require(["modules/nav",
             audio.playAudio.play(audio.src);
         });
 
-        btnVastusImg.on("click", function(){
+        btnVastus.on("click", function () {
+            if ($(this).text() == "VASTUS ON ÕIGE") {
+                audio.src = 'audio/titles/vastus_on_oige.wav';
+                audio.playAudio.play(audio.src);
+            } else {
+                audio.src = 'audio/titles/vastus_on_vale.wav';
+                audio.playAudio.play(audio.src);
+            }
+
+        });
+
+        btnVastusImg.on("click", function () {
             if ($(this).html() !== "?") {
                 audio.src = "audio/numbers/" + inpLetter.val() + ".wav";
                 audio.playAudio.play(audio.src);
-            }else{
+            } else {
                 audio.src = "audio/titles/palun_sisesta_number.wav";
                 audio.playAudio.play(audio.src);
             }
@@ -147,7 +160,7 @@ require(["modules/nav",
             $("#mathOperation > div").css({ "justify-content": "center", "display": "flex", "font-size": "4em" });
         }
 
-        function addInputImages(params){
+        function addInputImages(params) {
             let j = 0, k = 0;
             for (i = 0; i < 11; i++) {
                 if (i <= 5 && j == params.firstNr) {
@@ -172,8 +185,8 @@ require(["modules/nav",
         }
 
         function validateInput() {
-            if (inpLetter.val() == firstInput.data("nr") + secondInput.data("nr")
-                || inpLetter.val() == firstInput.data("nr") - secondInput.data("nr")) {
+            if (inpLetter.val() == firstInput.data("nr") + secondInput.data("nr") && actionSign.text() == "+"
+                || inpLetter.val() == firstInput.data("nr") - secondInput.data("nr") && actionSign.text() == "-") {
                 btnVastus.show();
                 btnVastus.text('VASTUS ON ÕIGE');
                 btnVastus.append('<img src="images/smiley_PNG131.png" alt="Kuula"style="height: 2em; width: auto; display: inline-block; vertical-align: middle;"></img>');

@@ -24,6 +24,9 @@ define(['jquery'], function ($) {
                         <li class="nav-item">
                             <a class="nav-link" href="arvuta.html">ARVUTA</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kirjuta-ise.html">KIRJUTA ISE</a>
+                        </li>
                     </ul>
                     <span class="navbar-text">
                         <img src="images/student_PNG62552.png" alt="õpilased" class="h-2-em"></img>
