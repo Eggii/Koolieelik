@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TTU</title>
+</head>
+
+<body style="background-color: rgb(226, 43, 226);">
+    
+    <h1>
+        Üks huvitav kood:<b>212954</b>
+    </h1>
+    <div>
+        <b>
+            <div class="bg-light mb-5 mt-5">
+                NB!! TEGEMIST ON MITME LEHEKÜLJELISE MÄNGUGA, LISASIN SIIA JUURDE TALTECH ÜLESANDE HINDE SAAMISEKS.
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum erat fringilla ante laoreet finibus. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla quis enim fermentum, ornare lacus vel, faucibus leo. 
+            Sed id dapibus tellus. Praesent finibus eros ut varius hendrerit. 
+            Fusce porttitor felis nec arcu egestas, non sodales erat laoreet. 
+            In at interdum felis. Etiam vitae sem in purus malesuada luctus.
+            Aliquam erat volutpat. Praesent faucibus ex sed lectus lacinia, sed condimentum metus eleifend. 
+            Ut lectus tortor, tristique aliquet efficitur malesuada, commodo at justo. 
+            Suspendisse laoreet elit lacus, ut facilisis tellus hendrerit ut. 
+            Curabitur sit amet vestibulum libero. Aliquam sodales quam vitae enim sollicitudin lacinia. 
+            Cras aliquet magna massa, quis gravida urna consequat nec. Etiam luctus turpis ac neque scelerisque imperdiet. 
+            Aliquam nibh nisl, dapibus ac scelerisque in, molestie quis lorem. Curabitur ultrices velit urna, porta convallis quam volutpat eu. 
+            Ut in felis elementum, tincidunt massa ac, porta neque. Aenean vitae libero blandit, lobortis nisl sit amet, tempus ante. Nullam a tortor nibh. Suspendisse vel imperdiet nulla. Nam consectetur luctus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            Fusce in urna et lacus viverra efficitur vel id eros. Vestibulum ullamcorper nec mi ac egestas. Pellentesque semper libero eget nisi ullamcorper, id dignissim augue maximus. Integer at arcu et leo gravida maximus sed sit amet felis. Nam ultricies congue risus, vel porta erat. Fusce sed purus sit amet diam accumsan porttitor. Vivamus vel bibendum odio.
+        </b>
+    </div>
+    <table class="mt-4">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+    <div class="mt-5">
+        <b>
+        Lehel peab olema vähemalt üks link <a href="https://taltech.ee/">https://taltech.ee/</a> 
+        lehele (kasuta a tagi ja selle href atribuuti) 
+        </b>
+    </div>
+    <div class="flier"><img src="images/smiley_PNG36229.png" style="height: 5em;"></div>
+    <script data-main="scripts/config" src="scripts/lib/require.js"></script>
+    <script>require(["modules/valiOigeTaht"], function (params) {
+            params.main({ objCase: true });
+        });
+    </script>
+</body>
+
+</html>
